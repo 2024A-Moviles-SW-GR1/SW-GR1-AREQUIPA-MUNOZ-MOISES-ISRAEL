@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/videoTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Video Title" />
+
+    <EditText
+        android:id="@+id/videoDurationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration (in minutes)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/videoTitleEditText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/videoPublicationDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Publication Date"
+        android:layout_below="@id/videoDurationEditText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/videoQualityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quality"
+        android:layout_below="@id/videoPublicationDateEditText"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/videoLanguageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Language"
+        android:layout_below="@id/videoQualityEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/saveVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Video"
+        android:layout_below="@id/videoLanguageEditText"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

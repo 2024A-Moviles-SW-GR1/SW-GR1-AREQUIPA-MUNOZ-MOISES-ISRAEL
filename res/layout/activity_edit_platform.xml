@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editPlatformName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Platform Name"/>
+
+    <EditText
+        android:id="@+id/editPlatformPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editPlatformVideoQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Video Quality"/>
+
+    <EditText
+        android:id="@+id/editPlatformRelatedPlatforms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Related Platforms"/>
+
+    <EditText
+        android:id="@+id/editPlatformAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Audience"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/addVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Video"
+        android:layout_below="@+id/platformNameEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/viewVideosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Videos" />
+    <Button
+        android:id="@+id/deletePlatformButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Platform" />
+
+</LinearLayout>
